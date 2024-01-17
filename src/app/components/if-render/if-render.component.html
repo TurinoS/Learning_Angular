@@ -1,7 +1,8 @@
 <div class="class">
   <div *ngIf="canShow">Isso só aparecerá se for permitido</div>
-  <h2 *ngIf="name === 'Paulo'; else nameNotFound">O nome é Paulo</h2>
+  <h2 *ngIf="canShow; else nameNotFound">O nome é Paulo</h2>
   <ng-template #nameNotFound>
     <h2>O nome é outra coisa</h2>
   </ng-template>
+  <button (click)="mudaNome()">clique para mudar o nome</button>
 </div>

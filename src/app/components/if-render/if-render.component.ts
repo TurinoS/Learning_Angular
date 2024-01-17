@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
 export class IfRenderComponent {
   canShow: boolean = true;
 
-  name: string = 'Paulo';
+  mudaNome(): void {
+    this.canShow = !this.canShow;
+  }
 }
