@@ -4,10 +4,10 @@
 }
 
 body {
-  padding-bottom: 15%;
+  padding-bottom: 25%;
 }
 
 .class {
   border-bottom: 1px solid #ff0000;
-  padding: 1em;
+  padding: 3em;
 }
