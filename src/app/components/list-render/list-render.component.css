@@ -2,3 +2,12 @@
   list-style: none;
   padding-top: 0.5em;
 }
+
+.flexbox {
+  display: flex;
+  gap: 1em;
+}
+
+ul {
+  padding-bottom: 1em;
+}

@@ -1,0 +1,8 @@
+<div class="class">
+  <h2>Two way data biding</h2>
+  <form [ngStyle]="{ 'padding-top': '1em' }">
+    <input type="text" [(ngModel)]="name" name="name" placeholder="Name" />
+    <input type="submit" value="Submit" />
+  </form>
+  <h3 *ngIf="name != ''">Seu nome é {{ name }}?</h3>
+</div>

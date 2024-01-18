@@ -2,7 +2,12 @@
   <h2>Animais:</h2>
   <ul>
     <li *ngFor="let animal of animals" [ngClass]="lista">
-      Name: {{ animal.name }} - Type: {{ animal.type }}
+      <div [ngClass]="flexDiv">
+        <a routerLink="{{ animal.id }}">Name: {{ animal.name }}</a>
+        <button (click)="showAge(animal)">Show age</button>
+        <button (click)="removeAnimal(animal)">It died</button>
+      </div>
     </li>
   </ul>
+  <strong *ngIf="animalAge">{{ animalName }} has {{ animalAge }}</strong>
 </div>

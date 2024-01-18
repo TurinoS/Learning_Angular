@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +12,9 @@ import { IfRenderComponent } from './components/if-render/if-render.component';
 import { EmitterComponent } from './components/emitter/emitter.component';
 import { ChangeNumberComponent } from './components/change-number/change-number.component';
 import { ListRenderComponent } from './components/list-render/list-render.component';
+import { PipesComponent } from './components/pipes/pipes.component';
+import { TwoWayBidingComponent } from './components/two-way-biding/two-way-biding.component';
+import { ItemDetailComponent } from './components/item-detail/item-detail.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +25,13 @@ import { ListRenderComponent } from './components/list-render/list-render.compon
     IfRenderComponent,
     EmitterComponent,
     ChangeNumberComponent,
-    ListRenderComponent
+    ListRenderComponent,
+    PipesComponent,
+    TwoWayBidingComponent,
+    ItemDetailComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -1,0 +1,46 @@
+{
+  "animals": [
+    {
+      "id": 1,
+      "name": "Bolinha",
+      "type": "Dog",
+      "age": 3
+    },
+    {
+      "id": 2,
+      "name": "Whiskers",
+      "type": "Cat",
+      "age": 5
+    },
+    {
+      "id": 3,
+      "name": "Nemo",
+      "type": "Fish",
+      "age": 1
+    },
+    {
+      "id": 4,
+      "name": "Tweety",
+      "type": "Bird",
+      "age": 2
+    },
+    {
+      "id": 5,
+      "name": "Floquinho",
+      "type": "Rabbit",
+      "age": 4
+    },
+    {
+      "id": 6,
+      "name": "Mittens",
+      "type": "Cat",
+      "age": 2
+    },
+    {
+      "id": 7,
+      "name": "Ziggy",
+      "type": "Dog",
+      "age": 1
+    }
+  ]
+}

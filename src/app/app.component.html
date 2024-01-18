@@ -1,11 +1,11 @@
 <div class="class">
   <h1>HELLO, WORLD!!!</h1>
   <h3>my first component come next line</h3>
+  <nav>
+    <a routerLink="/">Home</a>
+    <a routerLink="/list">List</a>
+    <a routerLink="/if">If</a>
+    <a routerLink="/emitter">Emitter</a>
+  </nav>
 </div>
-
-<app-first-component></app-first-component>
-<app-parent-data [dogName]="name"></app-parent-data>
-<app-directives></app-directives>
-<app-if-render></app-if-render>
-<app-emitter></app-emitter>
-<app-list-render></app-list-render>
+<router-outlet></router-outlet>
